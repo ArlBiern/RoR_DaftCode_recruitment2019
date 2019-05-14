@@ -1,3 +1,10 @@
+# Rozwiązania zadania rekrutacyjnego DaftCode
+
+Poniżej znajduje się opis zadania. Zaproponowane rozwiązania nie przewiduje samoistnego dodawania produktów do koszyka
+w przypadku wykorzystania promocji typu 'set'.
+
+TREŚĆ ZADANIA:
+
 # Zadanie rekrutacyjne - GrillMaster
 
 Na zewnątrz jest już coraz cieplej i powoli rozpoczyna się sezon grillowy. Ale zanim będziemy mogli zaprosić znajomych na imprezę nad Wisłą musimy zrobić zakupy. Węgiel, chipsy, piwo, kiełbaski - a czym więcej ludzi tym dłuższa będzie nasza lista zakupów. Na szczęście sklep w którym chcemy to wszystko kupić oferuje kilka promocji, dzięki którym możemy obniżyć końcową cenę.
@@ -33,7 +40,7 @@ Przykładowe zapytania  i spodziewane odpowiedzi przy dodawaniu rzeczy do koszyk
 ```json
 POST /cart/items
 
-Body: 
+Body:
 {
   "product_id": 5,
   "quantity": 5
@@ -97,7 +104,7 @@ Oprócz produktów do koszyka możemy dodać też dostępne promocje. Będą one
 - `set` pozwala połączyć kilka produktów w jeden zestaw o niższej cenie
 - `set` może wymagać więcej niż jednej sztuki produktu
 - `extra` pozwala dostać jedną sztukę produktu bezpłatnie przy zakupie określonej liczby sztuk (np. 3 sztuki w cenie 2)
--  `extra` może być zdefiniowany dla wielu róznych produktów na raz (ale działa tylko dla produktów jednego typu) 
+-  `extra` może być zdefiniowany dla wielu róznych produktów na raz (ale działa tylko dla produktów jednego typu)
 
 Przykładowe zapytania dodające promocje do koszyka:
 
